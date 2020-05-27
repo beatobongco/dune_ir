@@ -1,10 +1,12 @@
 ## Learn Information Retrieval Through Dune
 
-![Dune book cover](https://raw.githubusercontent.com/beatobongco/dune_ir/master/static/dune.jpg)
-
 Learn how TF-IDF and BM25 work by stepping through code and searching through the Dune book.
 
-https://docs.google.com/presentation/d/1_4dB0V6NZyknxmJXFSQp2Xoi5TRIC46osJNOtlxy0S8/edit?usp=sharing
+Step through the code with this [presentation](
+https://docs.google.com/presentation/d/1_4dB0V6NZyknxmJXFSQp2Xoi5TRIC46osJNOtlxy0S8/edit?usp=sharing)
+
+
+![Dune book cover](https://raw.githubusercontent.com/beatobongco/dune_ir/master/static/dune.jpg)
 
 ### Installation
 
