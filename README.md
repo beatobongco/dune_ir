@@ -15,5 +15,5 @@ https://docs.google.com/presentation/d/1_4dB0V6NZyknxmJXFSQp2Xoi5TRIC46osJNOtlxy
 
 ### Sections
 
-* TF-IDF and how to search - check out search.py
-* BM25 - check out BM25.py
+* [TF-IDF and how to perform search](https://github.com/beatobongco/dune_ir/blob/master/search.py)
+* [BM25 implementation](https://github.com/beatobongco/dune_ir/blob/master/bm25.py)
