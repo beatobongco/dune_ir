@@ -35,6 +35,6 @@ class BM25(object):
         denom = X + (k1 * (1 - b + b * len_X / avdl))[:, None]
         # idf(t) = log [ n / df(t) ] + 1 in sklearn, so it need to be coneverted
         # to idf(t) = log [ n / df(t) ] with minus 1
-        idf = self.vectorizer._tfidf.idf_[None, q.indices] - 1.
-        numer = X.multiply(np.broadcast_to(idf, X.shape)) * (k1 + 1)                                                          
+        idf = self.vectorizer._tfidf.idf_[None, q.indices] - 1.0
+        numer = X.multiply(np.broadcast_to(idf, X.shape)) * (k1 + 1)
         return (numer / denom).sum(1).A1
