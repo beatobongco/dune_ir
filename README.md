@@ -6,7 +6,7 @@ Step through the code with this [presentation](
 https://docs.google.com/presentation/d/1_4dB0V6NZyknxmJXFSQp2Xoi5TRIC46osJNOtlxy0S8/edit?usp=sharing)
 
 
-![Dune book cover](https://raw.githubusercontent.com/beatobongco/dune_ir/master/static/dune.jpg)
+![Dune book cover](https://raw.githubusercontent.com/beatobongco/dune_ir/master/dune_demo.jpeg)
 
 ### Installation
 
