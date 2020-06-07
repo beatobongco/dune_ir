@@ -51,7 +51,7 @@ class TfidfSearch:
 
 
 class BM25Search:
-    def __init__(self, corpus, b=0.75, k1=1.6):
+    def __init__(self, corpus, b=0.75, k1=1.2):
         self.corpus = corpus
         logger.debug(f"Instantiating BM25Search with k1={k1} b={b}")
         self.vectorizer = BM25(b=b, k1=k1)

@@ -9,7 +9,7 @@ from loguru import logger
 
 
 class BM25(object):
-    def __init__(self, b=0.75, k1=1.6):
+    def __init__(self, b=0.75, k1=1.2):
         logger.debug(f"Instantiating BM25 with k1={k1} b={b}")
         self.vectorizer = TfidfVectorizer(norm=None, smooth_idf=False)
         self.b = b
