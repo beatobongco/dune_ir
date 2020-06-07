@@ -1,3 +1,3 @@
 export FLASK_APP=app.py 
 export FLASK_ENV=development
-flask run
+flask run -h 0.0.0.0
