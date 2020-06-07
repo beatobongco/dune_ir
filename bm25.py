@@ -5,10 +5,12 @@ Distributed as CC-0 (https://creativecommons.org/publicdomain/zero/1.0/)
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from scipy import sparse
+from loguru import logger
 
 
 class BM25(object):
     def __init__(self, b=0.75, k1=1.6):
+        logger.debug(f"Instantiating BM25 with k1={k1} b={b}")
         self.vectorizer = TfidfVectorizer(norm=None, smooth_idf=False)
         self.b = b
         self.k1 = k1
@@ -27,7 +29,7 @@ class BM25(object):
         # apply CountVectorizer
         X = super(TfidfVectorizer, self.vectorizer).transform(X)
         len_X = X.sum(1).A1
-        q, = super(TfidfVectorizer, self.vectorizer).transform([q])
+        (q,) = super(TfidfVectorizer, self.vectorizer).transform([q])
         assert sparse.isspmatrix_csr(q)
 
         # convert to csc for better column slicing

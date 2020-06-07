@@ -2,6 +2,7 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 from bm25 import BM25
+from loguru import logger
 
 
 def load_corpus(path):
@@ -50,9 +51,10 @@ class TfidfSearch:
 
 
 class BM25Search:
-    def __init__(self, corpus):
+    def __init__(self, corpus, b=0.75, k1=1.6):
         self.corpus = corpus
-        self.vectorizer = BM25()
+        logger.debug(f"Instantiating BM25Search with k1={k1} b={b}")
+        self.vectorizer = BM25(b=b, k1=k1)
         self.vectorizer.fit(corpus)
 
     def search(self, query, k=10):
