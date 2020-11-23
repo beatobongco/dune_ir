@@ -19,3 +19,4 @@ https://docs.google.com/presentation/d/1_4dB0V6NZyknxmJXFSQp2Xoi5TRIC46osJNOtlxy
 
 * [TF-IDF and how to perform search](https://github.com/beatobongco/dune_ir/blob/master/search.py)
 * [BM25 implementation](https://github.com/beatobongco/dune_ir/blob/master/bm25.py)
+* [BM25F in Julia](https://github.com/beatobongco/julia_playground/blob/master/BM25F.jl)
